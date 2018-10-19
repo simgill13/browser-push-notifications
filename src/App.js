@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Sim,Second,Alert} from 'testcomponentnpmpackage';
+import {Sim,Second,Alert,InputBanner} from 'testcomponentnpmpackage';
 import Notification  from 'react-web-notification';
 import PageVisibility from 'react-page-visibility';
 import moment from 'moment'
@@ -176,7 +176,12 @@ class App extends React.Component {
             title={this.state.title}
         options={this.state.options}
       />
-       </PageVisibility>    
+       </PageVisibility> 
+
+       <Sim/>
+       <Second/>  
+       <InputBanner/>
+       
       </div>
     )
   }
