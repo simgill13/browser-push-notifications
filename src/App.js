@@ -158,6 +158,14 @@ class App extends React.Component {
       message: 'I am a warning banner.',
    };
 
+   const data = {
+     contentType:'textDismiss',
+     InputBannerType:'SuccessBanner',
+     text:'custom ui input banner working on I.E',
+     action:undefined,
+     actionText:undefined
+   }
+
     return (
       <div>
         <button onClick={(e) => this.handleButtonClick(e)}>Notif!</button>
@@ -186,7 +194,7 @@ class App extends React.Component {
 
        <Sim/>
        <Second/>  
-       <InputBanner/>
+       <InputBanner {...data}/>
         <div style={{marginTop:'70px'}}>
         <Alert data={warningSample}/>
           </div>
