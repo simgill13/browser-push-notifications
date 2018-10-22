@@ -152,6 +152,12 @@ class App extends React.Component {
 
   render() {
 
+     const warningSample = {
+      alertType: 'textDismiss',
+      alertName: 'WarningBanner',
+      message: 'I am a warning banner.',
+   };
+
     return (
       <div>
         <button onClick={(e) => this.handleButtonClick(e)}>Notif!</button>
@@ -181,6 +187,10 @@ class App extends React.Component {
        <Sim/>
        <Second/>  
        <InputBanner/>
+        <div style={{marginTop:'70px'}}>
+        <Alert data={warningSample}/>
+          </div>
+      
        
       </div>
     )
